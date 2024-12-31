@@ -1,6 +1,6 @@
 import { Box, Typography } from '@mui/material'
 import React from 'react'
-import error from '../assets/clock.avif'
+import error from '../assets/page is not found.jpg'
 
 const PageNotFound = () => {
   return (

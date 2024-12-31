@@ -19,7 +19,7 @@ import { Badge, Menu, MenuItem } from '@mui/material';
 import { Link, Outlet } from 'react-router-dom';
 import CartList from '../cart-list/CartList';
 import { useSelector } from 'react-redux';
-import InventoryIcon from '@mui/icons-material/Inventory';
+import LocalMallIcon from '@mui/icons-material/LocalMall';
 
 interface Props {
   window?: () => Window;
@@ -110,7 +110,7 @@ function AppLayout(props: Props) {
             </Link>
             ))}
             <Badge badgeContent={cartItems?.length} color="secondary">
-              <InventoryIcon sx={{ cursor: 'pointer' }} className='text-white' onClick={toggleCartLiist(true)} />
+              <LocalMallIcon sx={{ cursor: 'pointer' }} className='text-white' onClick={toggleCartLiist(true)} />
             </Badge>
 
             <Button className='text-white'

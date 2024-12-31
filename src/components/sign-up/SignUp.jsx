@@ -5,7 +5,7 @@ import React, { useState } from 'react'
 import { Controller, useForm } from "react-hook-form"
 import { yupResolver } from "@hookform/resolvers/yup"
 import * as yup from "yup"
-
+import SignUpImage from '../assets/images.png'
 
 const schema = yup
   .object({
@@ -30,7 +30,7 @@ const SignUp = () => {
 
     <Box className='d-flex justify-content-center align-items-center vh-100 '>
       <Box className='px-5'>
-     
+        <img src={SignUpImage} alt="" />
       </Box>
       <Box>
       <form onSubmit={handleSubmit((data) => {

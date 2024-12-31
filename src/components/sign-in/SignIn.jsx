@@ -6,7 +6,7 @@ import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
 import { Controller, useForm } from "react-hook-form"
 import { yupResolver } from "@hookform/resolvers/yup"
 import * as yup from "yup"
-
+import SignInImage from "../assets/images.png"
 import axios from 'axios';
 
 const schema = yup
@@ -44,7 +44,7 @@ const SignIn = () => {
     <>
       <Box className='d-flex justify-content-center align-items-center vh-100'>
         <Box>
-          
+          <img src={SignInImage} alt="" />
         </Box>
         <Box>
           <form onSubmit={handleSubmit((data) => SignInHandler(data))}>
